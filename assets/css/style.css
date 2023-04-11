@@ -20,7 +20,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: Poppins, sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
 main {
     background: var(--White);
     width: 90vw;
-    height: 380px;
+    height: 450px;
     border-radius: 20px 20px 70px 20px;
     padding: 30px 20px;
     margin: 80px 0;
@@ -45,7 +45,8 @@ form {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 20px;
+    column-gap: 15px;
+    margin-bottom: 60px;
 }
 
 form label {
@@ -56,8 +57,8 @@ form label {
 }
 
 form input {
-    width: 85px;
-    height: 40px;
+    min-width: 50%;
+    height: 45px;
     font-size: 1.4em;
     border: 2px solid var(--Light-grey);
     border-radius: 7px;
@@ -73,10 +74,8 @@ form input:focus {
 #button {
     display: grid;
     justify-items: center;
-    align-items: center;
-    margin-top: 30px;
-    border-top: 1px solid var(--Smokey-grey);
-    margin-bottom: 30px;
+    border-top: 1px solid var(--Light-grey);
+    margin-bottom: 20px;
 }
 
 #button button {
@@ -85,10 +84,21 @@ form input:focus {
     width: 60px;
     border-radius: 50%;
     margin-top: -30px;
+    border: none;
+    box-shadow: 0px 0px 3px var(--Purple);
 }
 
 #result {
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#result span {
+    font-style: normal;
+    margin-right: 10px;
+    color: var(--Purple);
+    letter-spacing: 5px;
 }
 
 footer {
