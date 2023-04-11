@@ -2,36 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
+  <main>
+    <section id="form">
+      <form>
+        <label for="day">DAY
+          <input type="number" name="day" id="day" max="31" min="1" placeholder="DD">
+        </label>
+        <label for="month">MONTH
+          <input type="number" name="month" id="month" max="12" min="1" placeholder="MM">
+        </label>
+        <label for="year">YEAR
+          <input type="number" name="year" id="year" min="1900" placeholder="YYYY">
+        </label>
+      </form>
+    </section>
+    <section id="button">
+      <button><img src="assets/images/icon-arrow.svg" alt="Submit"></button>
+    </section>
+    <section id="result">
+      <p><span>--</span>years</p>
+      <p><span>--</span>mouths</p>
+      <p><span>--</span>days</p>
+    </section>
+  </main>
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
