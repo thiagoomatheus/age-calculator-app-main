@@ -41,23 +41,58 @@ main {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.404);
 }
 
+#day {
+    grid-area: day;
+}
+
+#month {
+    grid-area: month;
+}
+
+#year {
+    grid-area: year;
+}
+
+button {
+    grid-area: btn;
+}
+
 form {
+    height: 120px;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "day month year"
+    "btn btn btn";
     column-gap: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--Light-grey);
 }
 
 form label {
+    display: flex;
+    flex-direction: column;
+    color: var(--Smokey-grey);
+}
+
+form p{
+    margin-bottom: 5px;
     font-size: 0.8em;
     letter-spacing: 2px;
-    display: grid;
-    color: var(--Smokey-grey);
+}
+
+.erro-span {
+    color: red;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+.erro-input {
+    border: 1px solid red;
 }
 
 form input {
     min-width: 50%;
+    max-width: 70px;
     height: 45px;
     font-size: 1.4em;
     border: 2px solid var(--Light-grey);
@@ -71,21 +106,20 @@ form input:focus {
     border: 2px solid var(--Purple);
 }
 
-#button {
-    display: grid;
-    justify-items: center;
-    border-top: 1px solid var(--Light-grey);
-    margin-bottom: 20px;
-}
-
-#button button {
+#form button {
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: -30px;
     background: var(--Purple);
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    margin-top: -30px;
     border: none;
     box-shadow: 0px 0px 3px var(--Purple);
+}
+
+#form button:hover {
+    background: var(--Off-black);
 }
 
 #result {

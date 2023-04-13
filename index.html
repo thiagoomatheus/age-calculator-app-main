@@ -14,19 +14,17 @@
   <main>
     <section id="form">
       <form>
-        <label for="day">DAY
-          <input type="number" name="day" id="day" max="31" min="1" placeholder="DD">
+        <label for="day" id="label-day"><p>DAY</p>
+          <input type="number" name="day" id="day" max="31" min="1" placeholder="DD" required>
         </label>
-        <label for="month">MONTH
-          <input type="number" name="month" id="month" max="12" min="1" placeholder="MM">
+        <label for="month" id="label-month"><p>MONTH</p>
+          <input type="number" name="month" id="month" max="12" min="1" placeholder="MM" required>
         </label>
-        <label for="year">YEAR
-          <input type="number" name="year" id="year" min="1900" placeholder="YYYY">
+        <label for="year" id="label-year"><p>YEAR</p>
+          <input type="number" name="year" id="year" min="1900" placeholder="YYYY" required>
         </label>
+        <button type="submit"><img src="assets/images/icon-arrow.svg" alt="Submit" width="30px"></button>
       </form>
-    </section>
-    <section id="button">
-      <button><img src="assets/images/icon-arrow.svg" alt="Submit" width="30px"></button>
     </section>
     <section id="result">
       <p><span>--</span>years</p>
@@ -38,5 +36,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+  <script src="assets/scripts/script.js"></script>
 </body>
 </html>
