@@ -13,6 +13,10 @@ const err = {
     dataInvalid: "Must be a valid date"
 }
 
+let currentDate = new Date();
+
+let yearMax = currentDate.getFullYear();
+
 btn.addEventListener ("click", (e) => {
     e.preventDefault();
 
@@ -28,17 +32,26 @@ function validateDay(day) {
     if (!day) {
         displayError(err.empty, "day")
     }
+    else if (day < 1 || day > 31) {
+        displayError(err.invalid, "day")
+    }
 }
 
 function validateMonth(month) {
     if (!month) {
         displayError(err.empty, "month")
     }
+    else if (month < 1 || month > 12) {
+        displayError(err.invalid, "month"")
+    }
 }
 
 function validateYear(year) {
     if (!year) {
         displayError(err.empty, "year")
+    }
+    else if (year < 1900 || year > yearMax) {
+        displayError(err.invalid, "year")
     }
 }
 
