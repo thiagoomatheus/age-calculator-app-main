@@ -91,8 +91,8 @@ form p{
 }
 
 form input {
-    min-width: 50%;
-    max-width: 70px;
+    min-width: 80px;
+    max-width: 120px;
     height: 45px;
     font-size: 1.4em;
     border: 2px solid var(--Light-grey);
@@ -129,14 +129,43 @@ form input:focus {
 }
 
 #result span {
-    font-style: normal;
+    font-size: 1.1em;
     margin-right: 10px;
     color: var(--Purple);
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 footer {
     position: absolute;
     bottom: 10px;
     font-size: 0.7em;
+}
+
+footer a, footer a:visited {
+    color: var(--Purple);
+}
+
+footer a:hover {
+    color: hsl(259, 55%, 31%);;
+    border-bottom: 2px solid var(--Purple);
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 50vw;
+        height: 500px;
+    }
+
+    form {
+        column-gap: 5px;
+    }
+
+    #form button {
+        align-self: flex-end;
+        justify-self: end;
+    }
+
+    #result {
+        font-size: 3.2em;
+    }
 }
