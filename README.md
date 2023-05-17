@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution Code: [GitHub](https://github.com/thiagoomatheus/age-calculator-app-main)
-- Live Site URL: [GitHub Pages](https://thiagoomatheus.github.io/age-calculator-app-main/)
+- Live Site URL: [GitHub Pages](https://thiagoomatheus.github.io/age-calculator-app-main/index.html)
 
 ## My process
 
@@ -50,6 +50,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JS
 
 
 ### What I learned
